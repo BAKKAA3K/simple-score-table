@@ -1,7 +1,10 @@
+V1.2
 I updated table.html and style.css to improve mobile usability and simplify the styling without changing the overall visual design. 
 
-The HTML now includes data-label attributes on each data cell so the table can switch to a stacked mobile layout. On screens below 640px, each row becomes a card-like block, the header is visually hidden but still preserved semantically, and each value shows its own label. 
+The HTML now includes data-label attributes on each data cell so the table can switch to a stacked mobile layout. 
+On screens below 640px, each row becomes a card-like block, the header is visually hidden but still preserved semantically, and each value shows its own label. 
 
 That makes the table much easier to read on narrow screens than a squeezed 4-column layout. I also kept the summary row readable in the mobile version.
 
-The CSS was refactored by grouping repeated rules, introducing color variables in :root, and combining selectors where the same visual treatment was already being used. This reduces duplication and makes future edits safer, because colors and shared styles now live in one place instead of being repeated across multiple rules. Usability improves because the table remains clear on desktop, while mobile users get a layout that avoids horizontal compression and preserves scanability. I also rechecked both files after the changes, and there are no reported HTML or CSS errors.
+The CSS was refactored by grouping repeated rules, introducing color variables in :root, and combining selectors where the same visual treatment was already being used. 
+This reduces duplication and makes future edits safer, because colors and shared styles now live in one place instead of being repeated across multiple rules. Usability improves because the table remains clear on desktop, while mobile users get a layout that avoids horizontal compression and preserves scanability. I also rechecked both files after the changes, and there are no reported HTML or CSS errors.
